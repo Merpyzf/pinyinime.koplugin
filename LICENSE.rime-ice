@@ -1,0 +1,9 @@
+Rime Ice phrase data used to generate data/phrase_overlay.lua is licensed
+under the GNU General Public License, version 3.
+
+Source: https://github.com/iDvel/rime-ice
+Pinned revision: 3a543652a42c21904c62bd881d65e987600f0722
+
+The complete GPL-3.0 license text is already distributed in this plugin as
+LICENSE.rime-double-pinyin. That license text applies independently to the
+Rime Ice-derived portion identified in THIRD_PARTY_NOTICES.md.
