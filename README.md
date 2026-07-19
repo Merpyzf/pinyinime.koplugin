@@ -190,6 +190,12 @@ koreader/settings/chinesepinyin.lua
 
 完整版本列表、下载地址和校验信息见 [versions/README.md](versions/README.md)。机器可读索引位于 [versions/index.json](versions/index.json)。
 
+## 加入 KOReader+
+如果你有好用的配置、使用技巧、插件推荐，或者遇到了问题，都欢迎在群里分享和讨论。
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Merpyzf/pinyinime.koplugin/main/assets/screenshots/qrcode_1784473014681.jpg" width="200" alt="KOReader+">
+</p>
+
 ## 许可证与致谢
 
 插件程序按 [GNU Affero General Public License v3.0](LICENSE) 发布。词库、双拼规则和生成数据包含不同许可证的第三方材料；再分发时必须同时保留相应许可证和归属说明，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

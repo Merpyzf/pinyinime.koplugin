@@ -1,6 +1,18 @@
 -- /Users/wangke/Workspace/KoReaderPlugins/pinyinime.koplugin/pinyinime-screenshot.sdr/metadata.html.lua
 return {
-    ["annotations"] = {},
+    ["annotations"] = {
+        [1] = {
+            ["chapter"] = "拼音输入法（Pinyin IME）",
+            ["color"] = "yellow",
+            ["datetime"] = "2026-07-19 20:48:31",
+            ["drawer"] = "lighten",
+            ["page"] = "/html/body/main/p/text().0",
+            ["pageno"] = 1,
+            ["pos0"] = "/html/body/main/p/text().0",
+            ["pos1"] = "/html/body/main/p/text().28",
+            ["text"] = "基于 KOReader 内置简体中文输入法的拼音增强插件",
+        },
+    },
     ["config_panel_index"] = 1,
     ["copt_b_page_margin"] = 15,
     ["copt_block_rendering_mode"] = 3,
@@ -63,7 +75,7 @@ return {
     ["show_overlap_enable"] = false,
     ["stats"] = {
         ["authors"] = "N/A",
-        ["highlights"] = 0,
+        ["highlights"] = 1,
         ["language"] = "N/A",
         ["notes"] = 0,
         ["pages"] = 1,
