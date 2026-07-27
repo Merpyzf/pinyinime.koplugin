@@ -22,10 +22,11 @@ The complete upstream license is included in `LICENSE.rime-pinyin-simp`.
 The generated files `data/shuangpin_sogou_microsoft.lua`,
 `data/shuangpin_pinyin_jiajia.lua`, `data/shuangpin_flypy.lua`, and
 `data/shuangpin_common.lua` implement the key layouts and zero-initial rules
-documented by Apple. The corresponding pinned rules in
-[`rime/rime-double-pinyin`](https://github.com/rime/rime-double-pinyin) are used
-as a cross-check; the 小鹤 map also retains compatible alternate zero-initial
-codes from `double_pinyin_flypy.schema.yaml`.
+documented by Apple. The Apple 常用 layout is exposed as 自然码双拼 because it
+matches the pinned 自然码 rules in
+[`rime/rime-double-pinyin`](https://github.com/rime/rime-double-pinyin).
+The other Rime schemes are used as a cross-check, and the 小鹤 map also retains
+compatible alternate zero-initial codes from `double_pinyin_flypy.schema.yaml`.
 
 - Apple layout documentation:
   https://support.apple.com/zh-cn/guide/chinese-input-method/cimc29a772a9/mac
@@ -38,7 +39,7 @@ codes from `double_pinyin_flypy.schema.yaml`.
   - 搜狗双拼 / 微软双拼: `b95381c873f31054ddb8bac7137ab4319761393a55a4f34afe4bde03cbd7b4b0`
   - 拼音加加双拼: `73fdc00c6b80f3c3ae34e800e4b103188d6237ba3d2dbb2132be57c4d926eefb`
   - 小鹤双拼: `14b0cc17fb676976ec1bdb7d6693c9762b0fb632ea24b780033f4c603bfbe11b`
-  - 常用双拼: `ca4ac47ac6c86844147db748cde4a9447a49f6e02e087a7c15e3a8ba5009310a`
+  - 自然码双拼: `54aebd2cd68bb09b47f60f296a9e1eb7aab19110a80d36384fdabb9f10d4de45`
 - Local change: the layouts are applied at build time to the plugin's shared
   pinyin syllable inventory. Runtime decoding uses the generated two-key
   lookup tables; `m`, `n`, `ng`, and `hng` are handled by the plugin's explicit
