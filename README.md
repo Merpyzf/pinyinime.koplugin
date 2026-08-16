@@ -4,7 +4,7 @@
 
 Pinyin IME 沿用 KOReader 的简体中文键盘、输入框与按键交互，在原有输入体验上增加候选栏、完整词库、整句输入、双拼、个性化学习和后续词联想。插件只在简体中文键盘生效，不会替换 KOReader 的其他键盘布局。
 
-**当前版本：v1.1.0**　·　[下载插件](https://github.com/Merpyzf/pinyinime.koplugin/releases/download/v1.1.0/pinyinime.koplugin-v1.1.0.zip)　·　[查看版本说明](https://github.com/Merpyzf/pinyinime.koplugin/releases/tag/v1.1.0)
+**当前版本：v1.1.1**　·　[下载插件](https://github.com/Merpyzf/pinyinime.koplugin/releases/download/v1.1.1/pinyinime.koplugin-v1.1.1.zip)　·　[查看版本说明](https://github.com/Merpyzf/pinyinime.koplugin/releases/tag/v1.1.1)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Merpyzf/pinyinime.koplugin/main/assets/screenshots/v1.0.0/input-candidates.png" width="520" alt="全拼输入 nihaoshijie 时显示你好世界整句候选和紧凑候选栏">
@@ -69,6 +69,9 @@ Pinyin IME 是 KOReader 简体中文输入法的增强层，不是另一套键�
 - 展开按钮打开多行候选面板，并提供分页操作。
 - 候选点选、空格提交和虚拟键盘按键保持 KOReader 原有反馈方式。
 - 更新候选时限制刷新范围；展开、收起和翻页时再刷新对应区域。
+- 长文本末尾输入只排版当前可见尾部，不再随全文长度增加每键开销。
+- 输入框最终关闭时立即释放引擎、候选背景和延迟任务，避免长时使用后累积占用。
+- 个人学习数据使用单一低优先级写入器延迟落盘，按键处理不再同步序列化大量学习数据。
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Merpyzf/pinyinime.koplugin/main/assets/screenshots/v1.0.0/expanded-candidates.png" width="520" alt="输入 zhongwen 后展开多行候选并显示分页操作">
@@ -78,15 +81,15 @@ Pinyin IME 是 KOReader 简体中文输入法的增强层，不是另一套键�
 
 ## 安装
 
-1. 下载 [pinyinime.koplugin-v1.1.0.zip](https://github.com/Merpyzf/pinyinime.koplugin/releases/download/v1.1.0/pinyinime.koplugin-v1.1.0.zip)。
+1. 下载 [pinyinime.koplugin-v1.1.1.zip](https://github.com/Merpyzf/pinyinime.koplugin/releases/download/v1.1.1/pinyinime.koplugin-v1.1.1.zip)。
 2. 解压压缩包，得到顶层文件夹 `pinyinime.koplugin/`。
 3. 用 USB 将阅读器连接到电脑，把整个文件夹复制到 `koreader/plugins/`。
 4. 确认最终路径为 `koreader/plugins/pinyinime.koplugin/main.lua`，不要多套一层同名目录。
 5. 安全弹出阅读器，然后重启 KOReader。
 6. 在 KOReader 中启用“简体中文”键盘布局。
-7. 进入 `设置 → 设备 → 键盘 → 拼音输入法`，确认菜单中显示 `版本：v1.1.0`。
+7. 进入 `设置 → 设备 → 键盘 → 拼音输入法`，确认菜单中显示 `版本：v1.1.1`。
 
-发布包解压后约占 160 MiB。考虑复制过程和后续升级，建议设备至少预留 200 MiB 可用空间；精确大小和校验值见 [v1.1.0 版本记录](versions/v1.1.0.md)。
+发布包解压后约占 160 MiB。考虑复制过程和后续升级，建议设备至少预留 200 MiB 可用空间；精确大小和校验值见 [v1.1.1 版本记录](versions/v1.1.1.md)。
 
 ## 升级
 
